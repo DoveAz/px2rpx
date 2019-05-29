@@ -70,7 +70,7 @@ program.args.forEach(function (filePath) {
   if (config.threeVersion) {
     for (var dpr = 1; dpr <= 3; dpr++) {
       var newCssText = px2rpxIns.generateThree(cssText, dpr);
-      var newFileName = fileName.replace(/(.debug)?.css/, dpr + 'x.debug.css');
+      var newFileName = fileName.replace(/(.debug)?.css/, dpr + 'x.wxss');
       var newFilepath = path.join(outputPath, newFileName);
       saveFile(newFilepath, newCssText);
     }
