@@ -79,7 +79,7 @@ program.args.forEach(function (filePath) {
   // generate rpx version stylesheet
   if (config.rpxVersion) {
     var newCssText = px2rpxIns.generaterpx(cssText);
-    var newFileName = fileName.replace(/(.debug)?.css/, '.debug.css');
+    var newFileName = fileName.replace(/(.debug)?.css/, '.wxss');
     var newFilepath = path.join(outputPath, newFileName);
     saveFile(newFilepath, newCssText);
   }
